@@ -1,0 +1,23 @@
+1)
+
+def spisok(first,n):
+    second=[]
+    for i in first:
+        if int(i)>n:
+            second.append(i)
+    return second
+x=input('Введите список ').split()
+n=int(input('введите число '))
+print(spisok(x,n))
+
+
+3)
+
+def inicialy(name):
+    shortname=''
+    for i in name:
+        if (i.isupper()):
+            shortname=shortname+i+'.'
+    return shortname
+n=input('введите Имя Отчество Фамилия ')
+print(inicialy(n))
